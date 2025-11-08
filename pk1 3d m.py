@@ -37,7 +37,7 @@ image_path = r"D:\своя игра\photo_2025-10-27_23-26-15.jpg"
 try:
     img = imread(image_path)
     triangle = Polygon([A, B, C], closed=True, facecolor='white', edgecolor='none', zorder=2.5)
-    ax.add_patch(triangle)  # белый фон треугольника — закрывает всё под ним
+    ax.add_patch(triangle) 
 
     ax.imshow(
         img,
@@ -117,3 +117,4 @@ fig.patch.set_facecolor('white')
 
 
 plt.show()
+
