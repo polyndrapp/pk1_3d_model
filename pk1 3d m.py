@@ -60,7 +60,7 @@ draw_triangle([A, B, C], color='black', linewidth=2)
 dash_pattern = (0, (6, 5))
 draw_triangle([A_, B_, C_], color='black', linestyle=dash_pattern, linewidth=1.5)
 
-circle_small_bg = plt.Circle(O, r_, color='white', zorder=2.7)  # белый фон поверх линии, под треугольником
+circle_small_bg = plt.Circle(O, r_, color='white', zorder=2.7)  
 ax.add_artist(circle_small_bg)
 
 for angle in np.arange(0, 360, 60):
@@ -117,4 +117,5 @@ fig.patch.set_facecolor('white')
 
 
 plt.show()
+
 
